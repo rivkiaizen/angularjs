@@ -5,7 +5,7 @@
 
         <tab ng-repeat="tab in tabs | limitTo:options.limit track by $index"
              class="tab tab-item  {{::tab.class}}"
-             ng-style="{'max-width': 'calc((100% -'+($parent.tabs.length>options.limit?50:0).toString() + 'px)/'+options.limit+')'}"
+             ng-style="{'max-width': 'calc((100% - ' + (tabs.length>options.limit?50:0) +  'px)/'+options.limit+')'}"
              disable="tab.disable"
              ng-click="go(tab)" active="tab.active">
             <tab-heading>
@@ -20,10 +20,10 @@
         </tab>
         <tab class="tab tab-item tab-item-next" disable="true"
              ng-show="options.limit<tabs.length"
-             ng-style="{'max-width': ($parent.tabs.length>options.limit?50:0).toString() + 'px'}">
+             ng-style="{'max-width': (tabs.length>options.limit?'50':'0') + 'px'}">
             <tab-heading>
                 <ou-popover-list ou-popover-limit-from="options.limit"
-                                 ou-popover-toggle-item="go(tab)"
+                                 ou-popover-toggle-item="go"
                                  ou-popover-item-value="heading"
                                  ou-popover-list="tabs"></ou-popover-list>
             </tab-heading>

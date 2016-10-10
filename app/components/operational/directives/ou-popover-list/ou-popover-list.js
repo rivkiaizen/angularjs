@@ -21,6 +21,8 @@ var ouPopOverList = function ($document, $timeout,Helper) {
     function link(scope, elem, attrs) {
         scope.class = scope.class || 'ou-popover-icon';
 
+        scope.toggleItem = scope.toggleItem();
+
         scope.toggleSelectionList = function () {
             scope.visible = !scope.visible; //important 
         };

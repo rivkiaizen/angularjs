@@ -53,8 +53,11 @@ var transactionController = function ($log, toaster, $filter, $scope, $statePara
         ],
         tabListName: 'transactionTabs' + vm.transactionID,
         limitTo: 5,
+        //not to remove tab in small screen
         limitToSmallScreen:0
     };
+
+    //options how to view form details
     vm.optionsView = {
         chunkGroups: 1,
         chunkFields: 2,

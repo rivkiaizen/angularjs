@@ -37,7 +37,8 @@ var config = _.assign({}, _.cloneDeep(webpackConfig), {
 					var out = str.replace(new RegExp(toReplace, 'g'), replacer);
 					fs.writeFileSync(filePath, out);
 				};
-				replaceInFile(path.join(__dirname, 'app/bower_components/angular-ui-grid', 'bower.json'),	'\"./less\",', '');
+				replaceInFile(path.join(__dirname, 'app/bower_components/pikaday-angular', 'pikaday-angular.js'), "require[(]'angular'[)]", 'window.angular');
+				replaceInFile(path.join(__dirname, 'app/bower_components/angular-ui-grid', 'bower.json'), '\"./less\",', '');
 				replaceInFile(path.join(__dirname, 'app/bower_components/angular-ui-grid', 'bower.json'),	'\"./ui-grid.eot\",', '');
 				replaceInFile(path.join(__dirname, 'app/bower_components/angular-ui-grid', 'bower.json'),	'\"./ui-grid.ttf\",', '');
 				replaceInFile(path.join(__dirname, 'app/bower_components/angular-ui-grid', 'bower.json'),	'\"./ui-grid.css\",', '');

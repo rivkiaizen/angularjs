@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                             <div ng-switch-when-exp="INPUT_TYPES.GRID">
-                                <div ui-grid="::field.gridOptions" ui-grid-auto-resize ui-grid-resize-columns ui-grid-move-columns ui-grid-row-edit ui-grid-edit ui-grid-cellnav></div>
+                                <div ui-grid="::field.gridOptions" ui-grid-auto-resize ui-grid-resize-columns ui-grid-move-columns ui-grid-row-edit ui-grid-edit></div>
                                 <a ng-click="field.gridOptions.appScopeProvider.AddRow(field.gridOptions.name)">Add Row</a>
                             </div>
                             <div ng-switch-when-exp="INPUT_TYPES.PHONE" class="form-group">

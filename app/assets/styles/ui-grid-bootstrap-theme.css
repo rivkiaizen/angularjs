@@ -74,9 +74,11 @@
     content: "\f105" !important;
     font-size: 12px;
 }
+
 .ui-grid-cell-contents.ui-grid-header-cell-primary-focus span:not(.ui-grid-header-cell-label) {
     float: right;
 }
+
 .ui-grid-header-cell-label {
     display: inline-block;
     height: auto;
@@ -234,6 +236,7 @@
 .ui-grid-canvas {
     position: relative;
     padding-top: 1px;
+    border-top: 2px solid #dddddd;
 }
 
 .ui-grid-row:nth-child(odd) .ui-grid-cell {
@@ -250,8 +253,7 @@
 }
 
 .ui-grid-row:last-child .ui-grid-cell {
-    border-bottom-color: #d0d0d0;
-    border-bottom-style: solid;
+    border-bottom: 1px solid #d0d0d0;
 }
 
 .ui-grid-no-row-overlay {
@@ -534,7 +536,7 @@
 }
 
 .ui-grid-render-container-body > .ui-grid-header {
-    border-bottom: 2px solid #dddddd;
+   /* border-bottom: 2px solid #dddddd;*/
 }
 
     .ui-grid-render-container-body > .ui-grid-header > * .ui-grid-filter-container {
@@ -1037,13 +1039,14 @@ input[type="text"].ui-grid-filter-input {
     margin-left: 20px;
 }
 
-.ui-grid-pager-row-count-picker,.ui-grid-pager-control{
-    display:inline;
+.ui-grid-pager-row-count-picker, .ui-grid-pager-control {
+    display: inline;
 }
-.ui-grid-pager-control .ui-grid-pager-control-input{
-    width:auto !important;
-    max-width:50px ;
-}
+
+    .ui-grid-pager-control .ui-grid-pager-control-input {
+        width: auto !important;
+        max-width: 50px;
+    }
 /* remove spinner on the page input */
 .ui-grid-pager-control-input {
     -moz-appearance: textfield;

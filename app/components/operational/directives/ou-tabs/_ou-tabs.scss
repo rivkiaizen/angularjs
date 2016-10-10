@@ -98,15 +98,12 @@
                 background-color: $tabs-active-bg-color;
                 border-bottom: none;
                 border-top: 5px solid $tabs-border-top-color;
+                padding-top: 5px;
 
                 a {
                     color: $tabs-active-font-color;
                     border: 0;
                     text-align: left;
-                }
-
-                .triangle {
-                    top: -15px;
                 }
             }
         }
@@ -114,7 +111,7 @@
 }
 
 .view-wrapper.tabs {
-    margin:0px;
+    margin: 0px;
     padding: 15px 0px;
     height: calc(100% - #{$tabs-height}) !important;
 }

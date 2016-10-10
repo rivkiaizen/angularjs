@@ -268,7 +268,6 @@ operational.constant('DATE_FORMAT', require('./constants/DATE_FORMAT'));
 operational.constant('INPUT_TYPES', require('./constants/INPUT_TYPES'));
 operational.constant('INPUT_OPTIONS', require('./constants/INPUT_OPTIONS'));
 operational.constant('TRANSACTION_TABS_INFO', require('./constants/TRANSACTION_TABS_INFO'));
-operational.constant('ADDRESS_MODAL', require('./constants/ADDRESS_MODAL'));
 //operational.constant('angularMomentConfig', {preprocess: 'utc', format: 'YYYYMMDD'});
 /**end constants**/
 

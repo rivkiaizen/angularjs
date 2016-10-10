@@ -16,9 +16,9 @@
     "angularjs-toaster": "^0.4.15",
     "angular-ui-grid": "3.2.1",
     "angular-aria": "^1.5.8",
-    "pikaday-angular": "2.0.0",
     "angular-moment": "^0.10.3",
-    "angular-bootstrap-checkbox": "^0.5.0"
+    "angular-bootstrap-checkbox": "^0.5.0",
+    "pikaday-angular": "^2.0.0"
   },
   "overrides": {
     "pikaday-angular": {

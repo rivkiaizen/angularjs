@@ -32,7 +32,11 @@
         display: none;
     }
 
-    .popup-link{
+    .ui-grid-row:last-child .ui-grid-cell {
+        border-bottom: 1px solid #d0d0d0 !important;
+    }
+
+    .popup-link {
         margin-left: 25%;
     }
 
